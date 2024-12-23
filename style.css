@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer{
+    width: 1280px;
+    padding: 0 auto;
+}
+.Navbar img{
+    height: 100px;
+    width: 100px;
+
+}
+nav{
+    list-style: none;
+    padding: 0 100px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    
+}
+.Navbar ul a{
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.Navbar ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.Navbar li a:hover{
+    color: red;
+}
+/* navbar end */
+/* hero section end */
+.website img{
+    height: 500px;
+    transition: 0.5s;
+    margin-left: 150px;
+}
+.website img:hover{
+    transform: translateX(-150px);
+
+}
+
+.website{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    height: 500px;
+    margin: 0 auto;
+}
+.website button{
+    border-radius: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.spantag{
+color: coral;}
+.website button:hover{
+    background-color: red;
+
+}
+.website h2{
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.website p{
+    font-size: 20px;
+    text-align: justify;
+
+}
+.website i{
+    font-size: 30px;
+    margin-top: 20px;
+
+}
+/* hero section end */
+
+/* About section */
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px;
+    padding: 50px 100px;
+}
+
+.about img{
+    height: 300px;
+    border-radius: 500px 0 500px 0;
+    transition: 2s all ease;
+    border: 2px solid coral;
+    padding: 5px;
+}
+.about:hover img{
+    border-radius: 0 500px 0 500px;
+
+}
+.about h2{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.about span{
+    color: coral;
+}
+.about p{
+    text-align: justify;
+
+}
+.about button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: coral;
+    border: none;
+}
+.about button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+h2 span{
+    color: coral;
+}
+
+@media screen and (max-width: 430px) { 
+    .about{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 30px;
+        padding: 50px 100px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024) {
+    .about{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 30px;
+        padding: 50px 100px;
+    }
+    
+}
+
+/* About section end */
+
+/* Card Section */
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 50px 100px;
+}
+
+.card {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: translateY(-15px);
+}
+.card i{
+    color: coral;
+    font-size: 50px;
+    margin-top: 10px;
+}
+.card p{
+    text-align: justify;
+    margin-top: 10px;
+}
+.card button{
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+}
+.card button:hover{
+    background-color: gray;
+}
+
+@media screen and (max-width: 430px) { 
+    .cardContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 50px 100px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024) {
+    .cardContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 50px 100px;
+    }
+    
+}
+
+/* card section end */
+
+/* project */
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+h1 span{
+    color: coral;
+}
+
+.Projectscontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 50px 100px ;
+    gap: 50px;
+
+}
+
+.projectCard{
+background-color: whitesmoke;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+border-radius: 10px;
+transition: 1s ease;
+overflow: hidden;
+}
+.projectCard:hover{
+    transform: translateY(-15px);
+}
+.projectCard img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.projectCard img:hover{
+    transform: scale(1.2);
+}
+.projectCard p{
+    padding: 10px;
+
+}
+.projectCard h3{
+    padding: 10px;
+    
+}
+.projectCard span{
+    padding: 10px;
+    color: coral;
+}
+.projectCard button{
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 430px) { 
+    .Projectscontainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 50px 100px ;
+        gap: 50px;
+    
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024px) {
+    .Projectscontainer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 50px 100px ;
+        gap: 50px;
+    
+    }
+}
+
+/* Project end */
+/* Client feedback */
+.Client img{ 
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border-color: coral;
+    border: 5px;
+    margin-top: -80px;
+    
+}
+.Client p{
+    font-style: italic;
+    text-align: justify;
+}
+.Client h2{
+    font-size: 10px;
+    text-transform: lowercase;
+}
+.Client h3{
+    font-size: 8px;
+    color: coral;
+    text-align: center;
+}
+
+.Client i{
+    color: coral;
+}
+
+.Client{
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+
+}
+
+.ClientContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 100px;
+    gap: 10px;
+}
+.Client:hover{
+    transform: translateY(-10px);
+
+}
+@media screen and (max-width: 430px) { 
+    .ClientContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px 100px;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024) {
+    .ClientContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 50px 100px;
+        gap: 10px;
+    }
+    
+}
+
+/* clint feedback end */
+
+/* contact Me */
+
+.Contact{
+    padding: 20px 50px;
+
+    margin: 0,auto;
+    justify-content: start;
+
+}
+
+.Contact h4{
+    font-size: 20px;
+}
+.ContactI{
+    display: flex;
+    margin: 20px 10px;
+
+}
+.Contact i{
+    margin-top: 10px;
+    color: coral;
+    font-size: 20px;
+}
+ .icon i{
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50%;
+}
+.icon i:hover{
+    background-color: chocolate;
+    color: white;
+    
+}
+
+ .Contact-Container{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+} 
+.ContactInfo input{
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+
+}
+
+.ContactInfo textarea{
+    height: 150px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.submit-btn{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: coral;
+}
+
+@media screen and (max-width: 430px) { 
+    .Contact-Container{
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr)
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024px) {
+    .Contact-Container{
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr)
+    }
+}
+
+/* contact me end */
+/* footer top */
+
+.footer-Container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin-top:10px ;
+}
+
+.footer-wrapper{
+    align-self: start;
+}
+
+.footer-wrapper li{
+    list-style: none;
+}
+
+.footer-wrapper a{
+    text-decoration: none;
+
+}
+
+.footer-wrapper h5{
+    font-size: 30px;
+}
+
+.footer-wrapper h5 span{
+    color: coral;
+}
+    .footer-wrapper p{
+        color: bisque;
+        margin: 20px ;
+    }
+    
+    .footer-wrapper li a{
+        color: white;
+
+    }
+    .footer-wrapper li{
+        margin: 20px;
+    }
+    .Links{
+        color: coral;
+    }
+
+    .footer-wrapper span i{
+        font-size: 30px;
+        background-color: rgb(126, 31, 31);
+        color: white;
+        border-radius: 50%;
+    }
+
+    .footer-wrapper span i:hover {
+
+        background-color: coral;
+
+    }
+    .Contactinfo{
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+    }
+
+    footer p{
+        background-color: rgb(59, 50, 50);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 430px) { 
+        .footer-Container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            background-color: black;
+            color: white;
+            width: 100%;
+            padding: 20px;
+            margin-top:10px ;
+            align-items: center;
+
+        }
+    }
+
+    @media screen and (min-width: 431px) and (max-width: 1024) {
+        .footer-Container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color: black;
+            color: white;
+            width: 100%;
+            padding: 20px;
+            margin-top:10px ;
+            align-items: center;
+        }
+    }

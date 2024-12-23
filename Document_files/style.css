@@ -1,0 +1,61 @@
+
+.mainNavber{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    padding: 10px 20px;
+    color: white;
+    top: 10px;
+    align-items: center;
+
+}
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+    position: relative;
+
+}
+.menu li a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+.menu li a:active{
+    background-color:green ;
+    
+}
+.menu li:hover a{
+    background-color: blue;
+    
+}
+.menu a:focus{
+    background-color: rgb(14, 9, 9);
+}
+.menu .dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    width: 200px;
+    display: none;
+}
+.menu .dropdown li{
+    display: block;
+}
+.menu li:hover .dropdown{
+    display: block;
+}
+.dropdown li{
+    display: inline-block;
+    position: relative;
+
+}
+.dropdown li a{
+    color: white;
+}
+
